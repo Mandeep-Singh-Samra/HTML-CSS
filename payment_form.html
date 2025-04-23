@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/paymentform.css">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h1>Payment Form</h1>
+            <hr>
+            <h4>User Information</h4>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Mandeep Singh" required><br><br>
+            
+            <p>
+            <feildset>
+                <legend>Gender</legend>
+                <br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="uniqe">
+                <label for="male" name="gender" id="gender">Female</label>
+                <input type="radio" name="gender" id="uniqe">
+            </feildset></p>
+            <br><br>
+
+            <label for="address">Address</label>
+            <br>
+
+
+            <textarea id="address" placeholder="Sec-88, Mohali" name="address" rows="4" cols="50"
+                required></textarea><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="mandeep131414singh@gmail.com" required><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+919855131414" required><br><br>
+
+            <h2>Payment Information</h2>
+            <label for="card-type">Card Type:</label><br>
+
+
+            <select card="card-type" name="card-type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+
+            <br><br>
+            <label for="card-number">Card Number</label><br>
+            <input type="text" id="card-number" placeholder="43832342143" name="card-number" required><br><br>
+
+            <label for="expiry-date">Expiry Date:</label><br>
+            <input type="date" id="expiry-date" name="expiry-date" required><br><br>
+
+            <label for="cvv">CVV:</label><br>
+            <input type="password" id="cvv" name="cvv" placeholder="201" required><br><br>
+
+            <label for="pincode">Pincode
+            </label><br>
+            <input type="number" id="pincode" name="pincode" placeholder="148023" required><br><br>
+            
+            <input type="submit" value="Pay Now" id="submit">
+        
+        </form>
+    </div>
+</body>
+
+</html>
