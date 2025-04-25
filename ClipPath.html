@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        div{
+            width: 160px;
+            height: 80px;
+            padding: 20px;
+            border: 8px solid #f30000;
+            background: yellow;
+            
+        }
+        .a{
+            box-sizing: content-box;
+        }
+        .b{
+            box-sizing: border-box;
+        }
+        </style>
+    </head>
+<body>
+ 
+    <div class="a">Content Box</div>
+    <br><br>
+    <div class="b">Border Box</div>
+</body>
+</html>
