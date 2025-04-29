@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Challange1</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0 20px 30px 0;
+            line-height: 1.4;
+        }
+
+        .parent-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 2px solid #ffffff;
+            flex: 1 0 35%;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            border-radius: 5px;
+            
+        }
+
+        .flex-container {
+            flex: 1 0 22%;
+            display: flex;
+            flex-wrap: wrap;
+            border: 3px solid #ffffff;
+            background-color: rgb(75, 51, 22);
+        }
+
+        .flex-item {
+            
+            border: solid 1px  rgb(75, 51, 22);
+            text-align: center;
+            border-radius: 5px;
+            line-height: 1.4;
+            margin: 5px;
+            color:  rgb(75, 51, 22);
+            align-content: center;
+            background-color: rgb(255, 235, 186);
+        }
+        #box{
+            background-color: rgb(75, 51, 22);
+            flex:1 0 30%;
+            background-color: rgb(75, 51, 22);
+            border-radius: 6px;
+        }
+        #box1{
+            background-color: rgb(75, 51, 22);
+            flex:1 0 22%
+        }
+        #box2{
+            background-color: rgb(75, 51, 22);
+            flex:1 0 18%
+        }
+        #a{
+            flex:1 0 25%
+        }
+        #b{
+            flex:1 0 20%
+        }
+        #c{
+            flex:1 0 15%
+        }
+        #center{
+            background-color: rgb(75, 51, 22);
+            border-radius: 5px;
+            color: #fcfbf9;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 700;
+            flex:1 0 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="flex-container" id="box">
+            <div class="center" id="center">1</div>
+            <div class="flex-item" id="a">1</div>
+            <div class="flex-item" id="a">2</div>
+            <div class="flex-item" id="a">3</div>
+            <div class="flex-item" id="b">1</div>
+            <div class="flex-item" id="b">2</div>
+            <div class="flex-item" id="b">3</div>
+            <div class="flex-item" id="b">4</div>
+            <div class="flex-item" id="c">1</div>
+            <div class="flex-item" id="c">2</div>
+            <div class="flex-item" id="c">3</div>
+            <div class="flex-item" id="c">4</div>
+            <div class="flex-item" id="c">5</div>
+        </div>
+        <div class="parent-container" id="box" >2</div>
+        <div class="parent-container" id="box">3</div>
+        <div class="parent-container" id="box1">1</div>
+        <div class="parent-container" id="box1">2</div>
+        <div class="parent-container" id="box1">3</div>
+        <div class="parent-container" id="box1">4</div>
+        <div class="parent-container" id="box2">1</div>
+        <div class="parent-container" id="box2">2</div>
+        <div class="parent-container" id="box2">3</div>
+        <div class="parent-container" id="box2">4</div>
+        <div class="parent-container" id="box2">5</div>
+        
+</div></body>
+    </body>
+
+</html>
