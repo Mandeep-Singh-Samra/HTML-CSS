@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox-Challange-2-Practice</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .layout{
+        display: flex;
+        height: 100vh;
+    }
+    .navbar{
+        background-color: lightcoral;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .flex-parent-container{
+        display: flex;
+        flex-direction:column;
+        flex-grow: 1;
+    }
+    .container{
+        background-color: aqua;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+    }
+    .container:nth-child(1){
+        flex-grow: 0.1;
+    }
+    .container:nth-child(2){
+        flex-grow: 4;
+    }
+    .container:nth-child(3){
+        flex-grow: 0.1;
+    }
+    .h1,p{
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="layout">
+        <div class="navbar">
+            Navbar
+        </div>
+
+        <div class="flex-parent-container">
+            <div class="container">Header</div>
+            <div class="container">Main Content</div>
+            <div class="container">Footer</div>
+        </div>
+    </div>
+</body>
+
+</html>

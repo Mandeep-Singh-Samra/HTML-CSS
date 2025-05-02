@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Left Navbar</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .layout {
+      display: flex;
+      height: 100vh;
+    }
+
+    .navbar {
+      background-color: lightcoral;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .navbar a {
+      margin: 10px 0;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .flex-parent-container {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1; /* Allow this container to grow and fill the remaining space */
+    }
+
+    .container {
+      background-color: lightblue;
+      border: 1px solid black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container:nth-child(1) {
+      flex-grow: 1; /* Header */
+    }
+
+    .container:nth-child(2) {
+      flex-grow: 4; /* Content */
+    }
+
+    .container:nth-child(3) {
+      flex-grow: 1; /* Footer */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="layout">
+    <div class="navbar">
+      <a href="#">Navbar</a>
+    </div>
+
+    <div class="flex-parent-container">
+      <div class="container">Header</div>
+      <div class="container">Main Content</div>
+      <div class="container">Footer</div>
+    </div>
+  </div>
+</body>
+</html>
