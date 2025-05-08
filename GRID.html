@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID-CHALLANGE-1</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-gap:10px;
+            grid-auto-rows: minmax(600px,auto );
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: aliceblue;
+        }
+        .item{
+            background-color:rgb(63, 123, 174);
+            display: grid;
+        }
+        .a{
+             
+            border-bottom: 5px solid aliceblue;
+        }
+        .b{
+            border-top: 5px solid aliceblue;
+        }
+        .c{
+            border-bottom: 5px solid aliceblue;
+            border-top: 5px solid aliceblue; 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1-container">1</div>
+        <div class="item item-2-container">
+            <div class="a nested-item-2">2</div>
+            <div class="b nested-item-2">3</div>       
+        </div>
+        <div class="item item-3-container"> 
+            <div class="a nested-item-3">4</div>
+            <div class="c nested-item-3">5</div>
+            <div class="b nested-item-3">6</div>       
+        </div>
+        <div class="item item-4-container"> 
+            <div class="a nested-item-4">7</div>
+            <div class="c nested-item-4">8</div>
+            <div class="c nested-item-4">9</div>
+            <div class="b nested-item-4">10</div>       
+        </div>
+        <div class="item item-5-container"> 
+            <div class="a nested-item-5">11</div>
+            <div class="c nested-item-5">12</div>
+            <div class="c nested-item-5">13</div>
+            <div class="c nested-item-5">14</div>   
+            <div class="b nested-item-5">15</div>     
+        </div>
+        <div class="item item-6-container"> 
+            <div class="a nested-item-6">16</div>
+            <div class="c nested-item-6">17</div>
+            <div class="c nested-item-6">18</div>
+            <div class="c nested-item-6">19</div>
+            <div class="c nested-item-6">20</div>
+            <div class="c nested-item-6">21</div>
+            <div class="c nested-item-6">22</div>
+            <div class="c nested-item-6">23</div>
+            <div class="c nested-item-6">24</div>
+            <div class="c nested-item-6">25</div>
+            <div class="c nested-item-6">26</div>
+            <div class="c nested-item-6">27</div>
+            <div class="c nested-item-6">28</div>
+            <div class="b nested-item-6">29</div>        
+        </div>
+    </div>
+</body>
+</html>

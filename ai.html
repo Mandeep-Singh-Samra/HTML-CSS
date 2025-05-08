@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Column-wise Stacking Grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 fixed columns */
+      grid-auto-rows: 60px;
+      gap: 20px;
+    }
+
+    .item {
+      text-align: center;
+      background-color: rgb(82, 243, 130);
+      color: white;
+      border: 3px solid black;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Column 1 -->
+    <div class="item" style="grid-column: 1; grid-row: 1;">1</div>
+
+    <!-- Column 2 -->
+    <div class="item" style="grid-column: 2; grid-row: 1;">2</div>
+    <div class="item" style="grid-column: 2; grid-row: 2;">3</div>
+
+    <!-- Column 3 -->
+    <div class="item" style="grid-column: 3; grid-row: 1;">4</div>
+    <div class="item" style="grid-column: 3; grid-row: 2;">5</div>
+    <div class="item" style="grid-column: 3; grid-row: 3;">6</div>
+
+    <!-- Column 4 -->
+    <div class="item" style="grid-column: 4; grid-row: 1;">7</div>
+    <div class="item" style="grid-column: 4; grid-row: 2;">8</div>
+    <div class="item" style="grid-column: 4; grid-row: 3;">9</div>
+    <div class="item" style="grid-column: 4; grid-row: 4;">10</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID 2</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-gap: 10px;
+            grid-auto-rows: minmax(530px, auto);
+            background-color: aliceblue;
+
+
+        }
+
+        .item-2-container {
+            grid-template-rows: 1fr 4fr 1fr;
+        }
+
+        .item {
+            background-color: rgb(63, 123, 174);
+            display: grid;
+            font-size: 20px;
+        }
+
+        .a {
+            border-bottom: 10px solid white;
+
+        }
+
+        .b {
+            border-top: 10px solid white;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            background-color: rgb(63, 123, 174);
+        }
+
+        .c {
+            border-right: 10px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1-container">Navbar</div>
+
+        <div class="item item-2-container">
+            <div class="a">Header</div>
+            <div class="main">
+                <div class="c ">Main</div>
+                <div>Sidebar</div>
+            </div>
+            <div class="b ">Footer</div>
+        </div>
+    </div>
+</body>
+
+</html>
