@@ -5,30 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation | Home </title>
+
     <link rel="stylesheet" href="static/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 
 </head>
 
 <body>
     <header>
-        <h1>Animation</h1>
+        <div class="banner"></div>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Videos</a>
-        <a href="#">Pdf</a>
+        <a class="menu-btn" href="#">Home</a>
+        <a class="menu-btn" href="#">About</a>
+        <a class="menu-btn" href="#">Videos</a>
+        <a class="menu-btn" href="#" class="flex-align-right">Download PDF</a>
     </nav>
     <main>
 
         <section>
-            <h2>Animation Videos</h2>
-            <video src="video/vid1.mp4" width="33%" poster="img/img1.avif" controls></video>
-            <video src="video/vid2.mp4" width="33%" poster="img/img5.jpg" controls></video>
-            <video src="video/vid3.mp4" width="33%" poster="img/img3.jpeg" controls></video>
-            <video src="video/vid1.mp4" width="33%" controls></video>
-            <video src="video/vid2.mp4" width="33%" controls></video>
-            <video src="video/vid3.mp4" width="33%" controls></video>
+            <h2><span>Animation Videos</span></h2>
+
+            <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><video src="video/vid1.mp4"  poster="img/img1.avif" controls></video></div>
+                <div class="carousel-cell"> <video src="video/vid2.mp4"  poster="img/img5.jpg" controls></video></div>
+                <div class="carousel-cell"> <video src="video/vid3.mp4"  poster="img/img3.jpeg" controls></video></div>
+                <div class="carousel-cell">
+            <video src="video/vid1.mp4"  controls></video></div>
+                <div class="carousel-cell">  <video src="video/vid2.mp4" controls></video></div>
+            </div>
         </section>
 
         <section>
@@ -55,7 +67,7 @@
                     </a>
         </section>
         <h2>Our Foundar</h2>
-        <img src="img/img.jpg" width="33%" alt="This is Mandeep Singh Samra">
+        <img src="img/img mandeep.jpg" width="33%" alt="This is Mandeep Singh Samra">
         <h2>Mandeep Singh Samra</h2>
         <a href="www.linkedin.com/in/mandeep-singh-74a547355 " target="_blank">Linkedin</a>&nbsp;&nbsp;|&nbsp;&nbsp;
         <a href="www.github.com/mandeep-samra " target="_blank">Github</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -75,6 +87,7 @@
         <a href="#">Refund Policy</a>
         <p>&copy; 2023 Animation. All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
