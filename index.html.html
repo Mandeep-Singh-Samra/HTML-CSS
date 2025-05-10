@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="static/style.css">
 
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
@@ -34,48 +36,69 @@
 
             <!-- Flickity HTML init -->
             <div class="carousel" data-flickity='{ "wrapAround": true }'>
-                <div class="carousel-cell"><video src="video/vid1.mp4"  poster="img/img1.avif" controls></video></div>
-                <div class="carousel-cell"> <video src="video/vid2.mp4"  poster="img/img5.jpg" controls></video></div>
-                <div class="carousel-cell"> <video src="video/vid3.mp4"  poster="img/img3.jpeg" controls></video></div>
-                <div class="carousel-cell">
-            <video src="video/vid1.mp4"  controls></video></div>
-                <div class="carousel-cell">  <video src="video/vid2.mp4" controls></video></div>
+                <div class="carousel-cell wrapper"><video src="video/vid1.mp4" poster="img/img1.avif" controls></video>
+                </div>
+                <div class="carousel-cell wrapper"> <video src="video/vid2.mp4" poster="img/img5.jpg" controls></video>
+                </div>
+                <div class="carousel-cell wrapper"> <video src="video/vid3.mp4" poster="img/img3.jpeg" controls></video>
+                </div>
+                <div class="carousel-cell wrapper">
+                    <video src="video/vid1.mp4" controls></video>
+                </div>
+                <div class="carousel-cell"> <video src="video/vid2.mp4" controls></video></div>
             </div>
         </section>
 
         <section>
-            <h2>Animation Youtube Videos</h2>
-            <iframe width="33%" src="https://www.youtube.com/embed/19x04xH8hlw?si=gFkghPoJ3QV8Ytjp"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="33%" src="https://www.youtube.com/embed/8seREip-2T0?si=MQpCA5RVaYiSVyvH"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="33%" src="https://www.youtube.com/embed/vKYTUy-GFRs?si=8d6lxKswntLkiC0z"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2><span>Animation Youtube Videos</span></h2>
+            <div class="carousel " data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell wrapper"> <iframe
+                        src="https://www.youtube.com/embed/19x04xH8hlw?si=gFkghPoJ3QV8Ytjp" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="carousel-cell wrapper"> <iframe
+                        src="https://www.youtube.com/embed/8seREip-2T0?si=MQpCA5RVaYiSVyvH" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="carousel-cell wrapper"> <iframe
+                        src="https://www.youtube.com/embed/vKYTUy-GFRs?si=8d6lxKswntLkiC0z" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
         </section>
+
         <section>
-            <h2>Animation Pdf Download</h2>
-            <h5>Click any image to download anime pdf<h5>
-                    <a target="_blank" href="pdf/anmie1.pdf"><img src="img/img1.avif" width="33%"></a>
-                    <a target="_blank" href="pdf/anmie2.pdf"><img src="img/img3.jpeg" width="33%"></a>
-                    <a target="_blank" href="pdf/anmie3.pdf"><img src="img/img5.jpg" width="33%">
-                    </a>
+            <h2><span>Animation Pdf Download</span></h2>
+            <h2><span>Download</span></h2>
+            <div class="carousel " data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"> <a target="_blank" href="pdf/anmie1.pdf"><img src="img/img1.avif"
+                            class="img-responsive"></a></div>
+                <div class="carousel-cell"> <a target="_blank" href="pdf/anmie2.pdf"><img src="img/imgAnime.1.jpg"
+                            class="img-responsive">
+                </div>
+                <div class="carousel-cell"><a target="_blank" href="pdf/anmie3.pdf"><img src="img/imgAnime2.jpg"
+                            class="img-responsive">
+                    </a></div>
+            </div>
         </section>
-        <h2>Our Foundar</h2>
-        <img src="img/img mandeep.jpg" width="33%" alt="This is Mandeep Singh Samra">
-        <h2>Mandeep Singh Samra</h2>
-        <a href="www.linkedin.com/in/mandeep-singh-74a547355 " target="_blank">Linkedin</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="www.github.com/mandeep-samra " target="_blank">Github</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="www.instagram.com/mandeep_samra " target="_blank">Instagram</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="www.facebook.com/mandeep.singh.7393 " target="_blank">Facebook</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <h4>Hi, I am Mandeep Singh, a passionate front-end developer on a journey to build beautiful and
+
+        <h2><span>Our Founder</span></h2>
+        <img src="img/img_mandeep-r.png" alt="This is Mandeep Singh Samra" class="founder-img">
+        <h2 class="profile_name">Mandeep Singh Samra</h2>
+        <div class="sm-handle">
+            <a href="www.linkedin.com/in/mandeep-singh-74a547355 " target="_blank" class="linkedin-handle"><i class="fa fa-linkedin " style="font-size:24px"></i>Linkedin</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="www.github.com/mandeep-samra " target="_blank" class="github-handle"><i class="fa fa-github " style="font-size:24px"></i>Github</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="www.instagram.com/mandeep_samra " target="_blank"class="insta-handle"><i class="fa fa-instagram insta-handle" style="font-size:24px"></i>Instagram</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="www.facebook.com/mandeep.singh.7393 " target="_blank"class="fb-handle"><i class="fa fa-facebook fb-handle" style="font-size:24px"></i>Facebook</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        </div>
+        <div class="about-us"></div>
+        <h4 class="about-title">Hi, I am Mandeep Singh, a passionate front-end developer on a journey to build beautiful and
             responsive websites. I am currently focused on mastering HTML, CSS, JavaScript (ES6+), and
             React.js.</h4>
+            <h5 class="about-content">Anime refers to a style of animation originating from Japan, characterized by vibrant characters, colorful graphics, and action-filled plots, often with fantastical or futuristic themes. While "anime" in Japan encompasses all animation, in English and outside of Japan, it specifically refers to animation produced in Japan</h5>
         </section>
         <hr>
     </main>
@@ -85,7 +108,7 @@
         <a href="#">Terns of Use</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Refund Policy</a>
-        <p>&copy; 2023 Animation. All rights reserved.</p>
+        <a href="" class="flex-align-right">&copy; 2023 Animation. All rights reserved.</a>
     </footer>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
